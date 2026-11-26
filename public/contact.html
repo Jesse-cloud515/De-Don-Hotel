@@ -1,0 +1,95 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · CONTACT PAGE
+  =====================================================================
+  • Contact details are in section 2 — remember to update the same
+    details in /partials/footer.html and /partials/header.html.
+  • Messages from the form arrive in Admin → Enquiries.
+  • To move the map: change  q=...  in the iframe address.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Contact · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Contact DE DON in Maitama, Abuja: reservations, events and general enquiries, address, map and directions.">
+  <meta property="og:title" content="Contact · DE DON, Abuja">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=75">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="contact">
+  <main id="main">
+
+    <!-- ═══════════ 1 · PAGE HEADER ═══════════ -->
+    <section class="page-hero page-hero--short">
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <div class="page-hero__meta">
+          <h1 data-split>We look forward<br>to <em>welcoming you</em></h1>
+          <p data-reveal style="--d:.3s">Our team is available around the clock to help with reservations, events and every detail of your visit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 2 · CONTACT DETAILS + MAP ═══════════ -->
+    <section class="section">
+      <div class="container location">
+        <div class="location__body">
+          <dl class="facts" style="grid-template-columns:1fr;margin-top:0" data-reveal>
+            <div><dt>Address</dt><dd>Plot 1180, Aguiyi Ironsi Street<br>Maitama, Abuja 904101, Nigeria</dd></div>
+            <div><dt>Reservations</dt><dd><a href="tel:+2348090000000">+234 809 000 0000</a><br><a href="mailto:reservations@dedonhotel.com">reservations@dedonhotel.com</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/2348090000001" target="_blank" rel="noopener">+234 809 000 0001</a></dd></div>
+            <div><dt>Meetings &amp; events</dt><dd><a href="mailto:events@dedonhotel.com">events@dedonhotel.com</a></dd></div>
+            <div><dt>Check-in / check-out</dt><dd>From 2:00 pm · By 12:00 noon</dd></div>
+            <div><dt>From the airport</dt><dd>About 40 minutes by car from Nnamdi Azikiwe International Airport. Chauffeured transfers can be arranged.</dd></div>
+            <div><dt>Parking</dt><dd>Complimentary secure parking, with valet service at the main entrance.</dd></div>
+          </dl>
+          <div class="btn-row mt-s" data-reveal>
+            <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&destination=Maitama%2C%20Abuja%2C%20Nigeria" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="location__map" data-reveal="mask">
+          <iframe title="Map showing DE DON in Maitama, Abuja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://maps.google.com/maps?q=Maitama%2C%20Abuja%2C%20Nigeria&z=14&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 3 · CONTACT FORM (arrives in Admin → Enquiries) ═══════════ -->
+    <section class="section section--paper">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-reveal>Write to us</p>
+        <h2 data-split>Send a message</h2>
+
+        <form class="mt-m" data-enquiry="contact" novalidate data-reveal>
+          <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-grid">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="f-subject">Subject</label>
+              <select id="f-subject" name="subject"><option>General enquiry</option><option>Reservations</option><option>Dining</option><option>Meetings &amp; events</option><option>Feedback</option><option>Press &amp; partnerships</option></select></div>
+            <div class="field span-2"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+          </div>
+          <div class="btn-row mt-m"><button class="btn" type="submit">Send message</button></div>
+          <p class="form-status" aria-live="polite"></p>
+          <p class="muted" style="font-size:.8rem;margin-top:8px">We use your details only to respond to your message. See our <a href="/privacy" style="text-decoration:underline">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

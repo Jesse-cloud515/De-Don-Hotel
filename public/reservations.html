@@ -1,0 +1,123 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · RESERVATIONS PAGE
+  The booking steps are run by /assets/js/booking.js. You can safely edit
+  the headings and help text below; keep the ids (id="...") and name="..."
+  attributes on form fields unchanged so the booking keeps working.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Reserve Your Stay · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Check availability and request a reservation at DE DON, Abuja. Manage an existing reservation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reserve Your Stay · DE DON, Abuja">
+  <meta property="og:description" content="Check availability and request a reservation at DE DON, Abuja. Manage an existing reservation.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=75">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+  <script src="/assets/js/booking.js" defer></script>
+</head>
+<body data-page="reservations">
+  <main id="main">
+    <section class="page-hero page-hero--short">
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Reservations</p>
+        <div class="page-hero__meta"><h1 data-split>Reserve<br>your <em>stay</em></h1><p data-reveal style="--d:.3s">Choose your dates and room. Our reservations team personally confirms every request.</p></div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(56px,7vw,96px)">
+      <div class="container">
+        <div class="tabs" role="tablist">
+          <button role="tab" aria-selected="true" aria-controls="tab-book" id="t-book">New reservation</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-manage" id="t-manage">Manage a reservation</button>
+        </div>
+
+        <div id="tab-book" role="tabpanel" aria-labelledby="t-book">
+          <ol class="steps" id="steps"><li class="is-current">Your stay</li><li>Room</li><li>Guest details</li><li>Review</li></ol>
+          <div class="booking">
+            <div class="booking__main">
+              <!-- Step 1 -->
+              <form class="step-panel is-active" data-step="1" id="f-stay" novalidate>
+                <h2 style="font-size:clamp(2rem,3vw,2.8rem)">When will you be with us?</h2>
+                <div class="stay-grid mt-m">
+                  <div class="field field--serif"><label for="s-in">Arrival</label><input id="s-in" type="date" name="checkIn" required></div>
+                  <div class="field field--serif"><label for="s-out">Departure</label><input id="s-out" type="date" name="checkOut" required></div>
+                  <div class="field field--serif"><label for="s-ad">Adults</label><select id="s-ad" name="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+                  <div class="field field--serif"><label for="s-ch">Children</label><select id="s-ch" name="children"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+                </div>
+                <div class="btn-row mt-m"><button class="btn" type="submit">Check availability <svg class="arrow" viewBox="0 0 22 8" aria-hidden="true"><path d="M0 4h21M17.5 .5 21 4l-3.5 3.5" fill="none" stroke="currentColor"/></svg></button></div>
+                <p class="form-status" aria-live="polite"></p>
+              </form>
+              <!-- Step 2 -->
+              <div class="step-panel" data-step="2">
+                <div class="btn-row" style="justify-content:space-between"><h2 style="font-size:clamp(2rem,3vw,2.8rem)">Choose your room</h2><button class="link-line" data-back="1">Change dates</button></div>
+                <p class="muted mt-s" id="results-note"></p>
+                <div id="results" class="mt-m"></div>
+              </div>
+              <!-- Step 3 -->
+              <form class="step-panel" data-step="3" id="f-guest" novalidate>
+                <div class="btn-row" style="justify-content:space-between"><h2 style="font-size:clamp(2rem,3vw,2.8rem)">Guest details</h2><button type="button" class="link-line" data-back="2">Change room</button></div>
+                <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+                <div class="form-grid mt-m">
+                  <div class="field"><label for="g-first">First name</label><input id="g-first" name="firstName" autocomplete="given-name" required></div>
+                  <div class="field"><label for="g-last">Last name</label><input id="g-last" name="lastName" autocomplete="family-name" required></div>
+                  <div class="field"><label for="g-email">Email</label><input id="g-email" name="email" type="email" autocomplete="email" required></div>
+                  <div class="field"><label for="g-phone">Phone</label><input id="g-phone" name="phone" type="tel" autocomplete="tel" placeholder="+234" required></div>
+                  <div class="field"><label for="g-country">Country of residence</label><input id="g-country" name="country" autocomplete="country-name"></div>
+                  <div class="field"><label for="g-arr">Estimated arrival time</label><input id="g-arr" name="arrivalTime" type="time"></div>
+                  <div class="field"><label for="g-purpose">Purpose of stay</label><select id="g-purpose" name="purpose"><option value="">Prefer not to say</option><option>Business</option><option>Leisure</option><option>Official / diplomatic</option><option>Event or celebration</option></select></div>
+                  <div class="field span-2"><label for="g-req">Special requests</label><textarea id="g-req" name="requests" placeholder="Airport transfer, dietary requirements, celebrations…"></textarea></div>
+                  <label class="check span-2"><input type="checkbox" name="consent" required> <span>I agree that DE DON may use these details to process my reservation request, as described in the <a href="/privacy" target="_blank">privacy policy</a>.</span></label>
+                </div>
+                <div class="btn-row mt-m"><button class="btn" type="submit">Review request <svg class="arrow" viewBox="0 0 22 8" aria-hidden="true"><path d="M0 4h21M17.5 .5 21 4l-3.5 3.5" fill="none" stroke="currentColor"/></svg></button></div>
+                <p class="form-status" aria-live="polite"></p>
+              </form>
+              <!-- Step 4 -->
+              <div class="step-panel" data-step="4">
+                <div class="btn-row" style="justify-content:space-between"><h2 style="font-size:clamp(2rem,3vw,2.8rem)">Review your request</h2><button class="link-line" data-back="3">Edit details</button></div>
+                <div id="review" class="mt-m"></div>
+                <p class="muted mt-s">By submitting, you are sending a <strong>reservation request</strong>. It becomes a confirmed booking only once our reservations team confirms it with you. No payment is taken on this website.</p>
+                <div class="btn-row mt-m"><button class="btn btn--gold" id="submit-res">Submit reservation request</button></div>
+                <p class="form-status" id="submit-status" aria-live="polite"></p>
+              </div>
+              <!-- Done -->
+              <div class="step-panel" data-step="5"><div class="confirm" id="confirm"></div></div>
+            </div>
+            <aside class="booking__aside"><div class="summary-card" id="summary"><h4>Your stay</h4><p class="muted" style="font-size:.9rem">Select your dates to begin.</p></div></aside>
+          </div>
+        </div>
+
+        <div id="tab-manage" role="tabpanel" aria-labelledby="t-manage" hidden>
+          <div class="booking">
+            <div class="booking__main">
+              <h2 style="font-size:clamp(2rem,3vw,2.8rem)">Find your reservation</h2>
+              <form id="f-lookup" class="mt-m" novalidate>
+                <div class="form-grid">
+                  <div class="field"><label for="l-ref">Reservation reference</label><input id="l-ref" name="reference" placeholder="DD-XXXXXX" required style="text-transform:uppercase"></div>
+                  <div class="field"><label for="l-email">Email used for the reservation</label><input id="l-email" name="email" type="email" required></div>
+                </div>
+                <div class="btn-row mt-m"><button class="btn" type="submit">Find reservation</button></div>
+                <p class="form-status" aria-live="polite"></p>
+              </form>
+              <div id="manage-result" class="mt-m"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

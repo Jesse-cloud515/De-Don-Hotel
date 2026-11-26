@@ -1,0 +1,99 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · ACCOMMODATION PAGE
+  =====================================================================
+  • Edit the headings and paragraphs below directly.
+  • The list of rooms (section 3) is filled in automatically from
+    Admin → Rooms, so room names, photos, sizes and prices stay the
+    same everywhere, including the booking system.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Rooms &amp; Suites · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Rooms and suites at DE DON, Maitama, Abuja — quiet, light-filled spaces for rest and work, with refined amenities and attentive service.">
+  <meta property="og:title" content="Rooms &amp; Suites · DE DON, Abuja">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=75">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="accommodation">
+  <main id="main">
+
+    <!-- ═══════════ 1 · PAGE HEADER (photo + title) ═══════════ -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img data-parallax="0.12" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2200&q=78" alt="An Executive Room at DE DON" fetchpriority="high">
+      </div>
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Accommodation</p>
+        <div class="page-hero__meta">
+          <h1 data-split>Rooms<br><em>&amp; Suites</em></h1>
+          <p data-reveal style="--d:.4s">Ninety-eight rooms and suites, each a quiet retreat from the capital — designed around deep rest, good light and space to work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 2 · INTRODUCTION STATEMENT ═══════════ -->
+    <section class="section section--tight">
+      <div class="container statement" data-reveal>
+        <p>Rest, <em>uninterrupted.</em> Natural textures, generous beds and the hush of a private residence.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════ 3 · ROOM LIST (automatic — edit rooms in Admin → Rooms) ═══════════ -->
+    <section class="section" style="padding-top:0">
+      <div class="container" id="room-list"></div>
+    </section>
+
+    <!-- ═══════════ 4 · IN EVERY ROOM ═══════════ -->
+    <section class="section section--paper">
+      <div class="container intro">
+        <div class="intro__head">
+          <p class="eyebrow" data-reveal>In every room</p>
+          <h2 data-split>The details<br>that matter</h2>
+        </div>
+        <div class="intro__body" data-reveal>
+          <ul class="amenity-list" style="columns:1">
+            <li>Premium mattresses and 400-thread-count linen</li>
+            <li>High-speed Wi-Fi throughout the hotel</li>
+            <li>Individually controlled air conditioning</li>
+            <li>55-inch smart TV with international channels</li>
+            <li>Rain shower and locally made bath amenities</li>
+            <li>24-hour in-room dining</li>
+            <li>Daily housekeeping and evening turndown</li>
+            <li>Backup power and water — uninterrupted, always</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 5 · GROUPS & DELEGATIONS ═══════════ -->
+    <section class="section section--dark section--tight">
+      <div class="container section-head" style="margin-bottom:0">
+        <div>
+          <p class="eyebrow">Extended stays &amp; delegations</p>
+          <h2 data-split>Arranging a group<br>or long stay?</h2>
+        </div>
+        <div data-reveal>
+          <p>Our reservations team can hold blocks of rooms, arrange connecting accommodation and prepare tailored rates for official delegations, corporate partners and stays of 14 nights or more.</p>
+          <a class="btn btn--gold mt-s" href="/contact">Speak to reservations</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "de-don-hotel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DE DON, Abuja: luxury hotel website (HTML/CSS/JS), reservation enquiry system and admin dashboard.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch-path=server server/server.js",
+    "reset-demo": "node server/reset-demo.js",
+    "sample-data": "node server/sample-data.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

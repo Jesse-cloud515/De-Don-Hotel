@@ -1,0 +1,185 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · DINING PAGE
+  =====================================================================
+  • Every venue is one <article class="venue-row"> block — copy a block
+    to add a venue, delete a block to remove one.
+  • Table requests from the form arrive in Admin → Enquiries.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Dining · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Ìtàn restaurant, The Gold Room bar and the poolside Terrace at DE DON, Abuja. Reserve a table or arrange a private dinner.">
+  <meta property="og:title" content="Dining · DE DON, Abuja">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=75">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="dining">
+  <main id="main">
+
+    <!-- ═══════════ 1 · PAGE HEADER ═══════════ -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img data-parallax="0.12" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2200&q=78" alt="The dining room at Ìtàn" fetchpriority="high">
+      </div>
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Dining</p>
+        <div class="page-hero__meta">
+          <h1 data-split>The Pleasure<br>of the <em>Table</em></h1>
+          <p data-reveal style="--d:.4s">Three distinct venues, one philosophy: honest ingredients, careful technique and service that reads the table.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 2 · INTRODUCTION ═══════════ -->
+    <section class="section">
+      <div class="container intro">
+        <div class="intro__head">
+          <p class="eyebrow" data-reveal>Our approach</p>
+          <h2 data-split>Honest flavours,<br>careful service</h2>
+        </div>
+        <div class="intro__body" data-reveal>
+          <p>Food is where hospitality becomes personal. Our kitchens, led by Executive Chef Adaeze Okafor, cook with respect for the ingredient and for the guest.</p>
+          <p>We buy from farmers across Nigeria — yams from Benue, vegetables from the Jos Plateau, fish from the Lagos coast — and pair them with classic and contemporary technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 3 · VENUES (one <article> per venue) ═══════════ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+
+        <!-- Venue 1 -->
+        <article class="venue-row">
+          <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1400&q=78" alt="Ìtàn restaurant interior" loading="lazy"></div>
+          <div class="venue-row__body" data-reveal>
+            <p class="eyebrow">Restaurant</p>
+            <h2>Ìtàn</h2>
+            <p class="lead mt-s">"Ìtàn" means story in Yoruba. Our signature restaurant tells the story of Nigerian cuisine through a modern lens, with an open kitchen and a menu that changes with the seasons.</p>
+            <dl class="facts">
+              <div><dt>Cuisine</dt><dd>Modern Nigerian &amp; international</dd></div>
+              <div><dt>Hours</dt><dd>Breakfast 6:30–10:30<br>Lunch 12:00–15:00<br>Dinner 18:30–23:00</dd></div>
+              <div><dt>Dress code</dt><dd>Smart casual</dd></div>
+            </dl>
+            <a class="link-line" href="#reserve-table">Reserve a table</a>
+          </div>
+        </article>
+
+        <!-- Venue 2 -->
+        <article class="venue-row">
+          <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1400&q=78" alt="The Gold Room bar" loading="lazy"></div>
+          <div class="venue-row__body" data-reveal>
+            <p class="eyebrow">Lounge &amp; Bar</p>
+            <h2>The Gold Room</h2>
+            <p class="lead mt-s">A low-lit lounge for an evening aperitif, a quiet meeting or a nightcap. Classic cocktails, rare spirits, a considered wine list and live jazz on Fridays.</p>
+            <dl class="facts">
+              <div><dt>Offer</dt><dd>Cocktails, wine &amp; small plates</dd></div>
+              <div><dt>Hours</dt><dd>16:00–01:00 daily</dd></div>
+              <div><dt>Live music</dt><dd>Fridays from 20:00</dd></div>
+            </dl>
+            <a class="link-line" href="#reserve-table">Reserve a table</a>
+          </div>
+        </article>
+
+        <!-- Venue 3 -->
+        <article class="venue-row">
+          <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1400&q=78" alt="Dinner on the Terrace" loading="lazy"></div>
+          <div class="venue-row__body" data-reveal>
+            <p class="eyebrow">Poolside</p>
+            <h2>Terrace</h2>
+            <p class="lead mt-s">Light lunches, fresh juices and grilled dishes beside the pool by day; candle-lit suya and seafood under the stars by night.</p>
+            <dl class="facts">
+              <div><dt>Cuisine</dt><dd>Grill, salads &amp; seafood</dd></div>
+              <div><dt>Hours</dt><dd>11:00–22:00 daily</dd></div>
+            </dl>
+            <a class="link-line" href="#reserve-table">Reserve a table</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ 4 · SIGNATURE DISHES ═══════════ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">From the kitchen</p><h2 data-split>Signature dishes</h2></div>
+          <div data-reveal><p>A taste of our menus. Dishes change with the seasons and what our farmers bring in.</p></div>
+        </div>
+        <div class="dishes" style="margin-top:0">
+          <figure class="dish" data-reveal style="margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=78" alt="Suya-spiced beef fillet" loading="lazy"></div>
+            <h4>Suya-Spiced Beef Fillet</h4>
+            <p>Charred peppers, yaji butter, smoked plantain purée.</p>
+          </figure>
+          <figure class="dish" data-reveal style="--d:.12s;margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=78" alt="Jollof risotto with prawns" loading="lazy"></div>
+            <h4>Jollof Risotto &amp; Prawns</h4>
+            <p>Smoky tomato rice, grilled tiger prawns, scotch-bonnet oil.</p>
+          </figure>
+          <figure class="dish" data-reveal style="--d:.24s;margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=78" alt="Garden plate" loading="lazy"></div>
+            <h4>Garden Plate</h4>
+            <p>Seasonal vegetables from the Jos Plateau, herb oil, toasted seeds.</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 5 · PRIVATE DINING ═══════════ -->
+    <section class="section section--sand">
+      <div class="container intro">
+        <div class="intro__head"><p class="eyebrow" data-reveal>Private dining</p><h2 data-split>A table set<br>for the occasion</h2></div>
+        <div class="intro__body" data-reveal>
+          <p>For birthdays, anniversaries and business dinners, our private dining room seats up to 18 guests. Our chef will design a menu around your occasion, with wine pairings from our sommelier.</p>
+          <a class="link-line mt-s" href="#reserve-table">Enquire about private dining</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 6 · TABLE RESERVATION FORM (arrives in Admin → Enquiries) ═══════════ -->
+    <section class="section" id="reserve-table">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-reveal>Reservations</p>
+        <h2 data-split>Reserve a table</h2>
+        <p class="muted mt-s" data-reveal>Send us your preferred date and time and we will confirm your table by email or phone.</p>
+
+        <form class="mt-m" data-enquiry="dining" novalidate data-reveal>
+          <input type="hidden" name="subject" value="Table reservation">
+          <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-grid">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="f-venue">Venue</label>
+              <select id="f-venue" name="company"><option>Ìtàn</option><option>The Gold Room</option><option>Terrace</option><option>Private dining room</option></select></div>
+            <div class="field"><label for="f-date">Date</label><input id="f-date" name="date" type="date"></div>
+            <div class="field"><label for="f-time">Time</label><input id="f-time" name="time" type="time"></div>
+            <div class="field"><label for="f-party">Guests</label>
+              <select id="f-party" name="partySize"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9+</option></select></div>
+            <div class="field span-2"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required placeholder="Occasion, dietary requirements, seating preference…"></textarea></div>
+          </div>
+          <div class="btn-row mt-m"><button class="btn" type="submit">Request a table</button></div>
+          <p class="form-status" aria-live="polite"></p>
+          <p class="muted" style="font-size:.8rem;margin-top:8px">We use your details only to respond to this request. See our <a href="/privacy" style="text-decoration:underline">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

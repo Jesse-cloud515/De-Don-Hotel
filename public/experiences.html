@@ -1,0 +1,112 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · EXPERIENCES & AMENITIES PAGE
+  =====================================================================
+  • Each experience is one <article> block inside "amenity-grid".
+    Copy a block to add one; delete a block to remove one.
+  • The id="..." on each article lets the home page link straight to it.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Experiences &amp; Amenities · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Pool, spa and wellness, 24-hour fitness, concierge, airport transfers and business centre at DE DON, Abuja.">
+  <meta property="og:title" content="Experiences &amp; Amenities · DE DON, Abuja">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=75">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="experiences">
+  <main id="main">
+
+    <!-- ═══════════ 1 · PAGE HEADER ═══════════ -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img data-parallax="0.12" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2200&q=78" alt="The pool at dusk" fetchpriority="high">
+      </div>
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Experiences &amp; Amenities</p>
+        <div class="page-hero__meta">
+          <h1 data-split>Time,<br><em>Well Spent</em></h1>
+          <p data-reveal style="--d:.4s">Restorative spaces and attentive services, arranged around the rhythm of your stay.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 2 · EXPERIENCES (one <article> each) ═══════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="amenity-grid">
+
+          <article id="pool">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=78" alt="The swimming pool" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Leisure</p><h3>Swimming Pool</h3>
+              <p>A 25-metre heated outdoor pool framed by palms, with shaded cabanas and food and drinks served from the Terrace. Open daily, 7 am to 9 pm.</p></div>
+          </article>
+
+          <article id="spa">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=78" alt="A spa treatment room" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Wellness</p><h3>Spa &amp; Wellness</h3>
+              <p>Six treatment rooms, a steam room and relaxation lounge. Our signature rituals use shea butter, black soap and botanicals from across West Africa.</p></div>
+          </article>
+
+          <article id="fitness">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=78" alt="The fitness centre" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Wellness</p><h3>Fitness Centre</h3>
+              <p>Open 24 hours, with cardio and strength equipment, free weights and a yoga studio. Personal trainers are available on request.</p></div>
+          </article>
+
+          <article id="concierge">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1559508551-44bff1de756b?auto=format&fit=crop&w=1400&q=78" alt="The lobby lounge" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Service</p><h3>Concierge</h3>
+              <p>Restaurant reservations, city tours, shopping at Jabi Lake Mall, excursions to Zuma Rock and the arrangements that make a stay effortless.</p></div>
+          </article>
+
+          <article id="transfers">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1400&q=78" alt="A tree-lined avenue" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Service</p><h3>Airport Transfers</h3>
+              <p>Chauffeured Mercedes-Benz transfers to and from Nnamdi Azikiwe International Airport, with meet-and-greet in arrivals. Book with your reservation.</p></div>
+          </article>
+
+          <article id="business">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=78" alt="The business centre" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Business</p><h3>Business Centre</h3>
+              <p>Private workstations, printing, scanning and secretarial support, open daily from 7 am to 10 pm.</p></div>
+          </article>
+
+          <article id="private-dining">
+            <div class="frame" data-reveal="mask"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1400&q=78" alt="A private dinner" loading="lazy"></div>
+            <div data-reveal><p class="eyebrow">Dining</p><h3>Private Dining</h3>
+              <p>A private room for up to 18 guests, with menus designed by our Executive Chef.</p></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 3 · CONCIERGE BAND ═══════════ -->
+    <section class="section section--dark section--tight">
+      <div class="container section-head" style="margin-bottom:0">
+        <div><p class="eyebrow">Concierge</p><h2 data-split>Anything you need,<br>arranged</h2></div>
+        <div data-reveal>
+          <p>Speak to our team before you arrive or at any time during your stay — by phone, email or WhatsApp.</p>
+          <a class="btn btn--gold mt-s" href="/contact">Contact the concierge</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

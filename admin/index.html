@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>DE DON · Hotel Dashboard</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script src="/admin/admin.js" defer></script>
+</head>
+<body>
+  <!-- Sign-in -->
+  <section class="login" id="login" hidden>
+    <form class="login__card" id="login-form" novalidate>
+      <svg class="login__mark" viewBox="0 0 30 40" aria-hidden="true"><path d="M1.5 39V15a13.5 13.5 0 0 1 27 0v24M8.5 39V18.5a6.5 6.5 0 0 1 13 0V39M.5 39h29" fill="none" stroke="currentColor"/><circle cx="15" cy="6" r="1.2" fill="currentColor"/></svg>
+      <h1>DE DON</h1>
+      <p class="login__sub">Hotel dashboard</p>
+      <label>Email<input type="email" name="email" autocomplete="username" required></label>
+      <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+      <button class="btn btn--primary btn--block" type="submit">Sign in</button>
+      <p class="login__error" role="alert"></p>
+      <a class="login__back" href="/">← Back to website</a>
+    </form>
+  </section>
+
+  <!-- Application -->
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="sidebar__brand" href="#overview">
+        <svg viewBox="0 0 30 40" aria-hidden="true"><path d="M1.5 39V15a13.5 13.5 0 0 1 27 0v24M8.5 39V18.5a6.5 6.5 0 0 1 13 0V39M.5 39h29" fill="none" stroke="currentColor"/><circle cx="15" cy="6" r="1.2" fill="currentColor"/></svg>
+        <span><strong>DE DON</strong><small>Dashboard</small></span>
+      </a>
+      <nav class="sidebar__nav" id="nav"></nav>
+      <div class="sidebar__foot">
+        <div class="sidebar__user" id="me"></div>
+        <a href="#account">My account</a> · <button id="logout">Sign out</button>
+        <a class="sidebar__site" href="/" target="_blank" rel="noopener">View website ↗</a>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="topbar__menu" id="menu-btn" aria-label="Menu">☰</button>
+        <h1 id="page-title">Overview</h1>
+        <div class="topbar__actions" id="page-actions"></div>
+      </header>
+      <main class="view" id="view"></main>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" hidden><div class="drawer__panel" role="dialog" aria-modal="true"><button class="drawer__close" data-close aria-label="Close">×</button><div id="drawer-body"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>

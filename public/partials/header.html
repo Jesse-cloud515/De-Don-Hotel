@@ -1,0 +1,52 @@
+<!-- =====================================================================
+     SITE HEADER — shown at the top of EVERY page.
+     Edit this one file to change the menu everywhere.
+     (main.js loads it into each page automatically.)
+     ===================================================================== -->
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a class="brand" href="/" aria-label="DE DON — home">
+      <svg class="brand__mark" viewBox="0 0 30 40" aria-hidden="true"><path d="M1.5 39V15a13.5 13.5 0 0 1 27 0v24" fill="none" stroke="currentColor"/><path d="M8.5 39V18.5a6.5 6.5 0 0 1 13 0V39" fill="none" stroke="currentColor"/><path d="M.5 39h29" stroke="currentColor"/><circle cx="15" cy="6" r="1.2" fill="currentColor"/></svg>
+      <span class="brand__text"><span class="brand__name">DE DON</span><span class="brand__place">ABUJA</span></span>
+    </a>
+
+    <!-- Main menu (desktop) — add, remove or rename links here -->
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" href="/accommodation">Accommodation</a>
+      <a class="nav__link" href="/dining">Dining</a>
+      <a class="nav__link" href="/experiences">Experiences</a>
+      <a class="nav__link" href="/meetings-events">Meetings &amp; Events</a>
+      <a class="nav__link" href="/about">About</a>
+      <a class="nav__link" href="/contact">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="btn btn--gold btn--sm" href="/reservations">Book Now</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Full-screen menu (mobile & tablet) — keep these links in step with the menu above -->
+<div class="menu-panel" id="menu-panel">
+  <nav aria-label="Mobile">
+    <a href="/"><small>01</small>Home</a>
+    <a href="/accommodation"><small>02</small>Accommodation</a>
+    <a href="/dining"><small>03</small>Dining</a>
+    <a href="/experiences"><small>04</small>Experiences</a>
+    <a href="/meetings-events"><small>05</small>Meetings &amp; Events</a>
+    <a href="/gallery"><small>06</small>Gallery</a>
+    <a href="/about"><small>07</small>About</a>
+    <a href="/contact"><small>08</small>Contact</a>
+  </nav>
+  <div class="menu-panel__foot">
+    <a href="tel:+2348090000000">+234 809 000 0000</a>
+    <a href="mailto:reservations@dedonhotel.com">reservations@dedonhotel.com</a>
+    <a class="btn btn--gold" href="/reservations">Reserve your stay</a>
+  </div>
+</div>

@@ -1,0 +1,400 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · HOME PAGE
+  =====================================================================
+  HOW TO EDIT THIS PAGE
+  • Change any text between the tags, e.g.  <h2>Your new heading</h2>
+  • <br> starts a new line inside a heading.
+  • To change a photo, replace the address in  src="..."  (keep the quotes)
+    and describe the photo in  alt="..."  (for accessibility and Google).
+  • Attributes such as data-reveal, data-split and data-parallax only
+    control the animations — leave them as they are.
+  • The room cards in section 4 come from the dashboard (Admin → Rooms),
+    because prices and availability are managed there.
+  • The menu and footer are in /partials/header.html and footer.html.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+
+  <!-- Search engines & social sharing: page title and description -->
+  <title>DE DON · Luxury Hotel in Abuja, Nigeria</title>
+  <meta name="description" content="DE DON is a luxury hotel in Maitama, Abuja offering refined rooms and suites, fine dining, a spa, meetings and events. Reserve your stay.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DE DON · An Exceptional Stay. An Extraordinary Experience.">
+  <meta property="og:description" content="Refined hospitality and exceptional comfort in the heart of Abuja.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=75">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#101B1B">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="home">
+
+  <!-- Opening logo animation (plays once per visit) -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg viewBox="0 0 30 40"><path d="M1.5 39V15a13.5 13.5 0 0 1 27 0v24M8.5 39V18.5a6.5 6.5 0 0 1 13 0V39M.5 39h29"/><circle cx="15" cy="6" r="1.2"/></svg>
+      <span class="loader__word">DE DON</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         1 · HERO — the large opening photo and headline
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=78"
+             alt="DE DON at dusk" fetchpriority="high">
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow" data-reveal style="--d:.1s">Maitama · Abuja</p>
+        <h1 class="hero__title" data-split>A World of Comfort.<br>A Sense of Belonging.</h1>
+        <p class="hero__text" data-reveal style="--d:.5s">
+          Discover refined hospitality and exceptional comfort in the heart of Abuja.
+        </p>
+        <div class="btn-row" data-reveal style="--d:.7s">
+          <a class="btn btn--gold" href="#discover">Explore DE DON</a>
+          <a class="btn btn--light" href="/reservations">Reserve your stay</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">Scroll</div>
+
+      <!-- Quick availability search (sends guests to the booking page with their dates) -->
+      <div class="quickbook" data-reveal="fade" style="--d:.9s">
+        <form action="/reservations" method="get" data-quickbook>
+          <div class="qb-field"><label for="qb-in">Arrival</label><input id="qb-in" type="date" name="checkIn" required></div>
+          <div class="qb-field"><label for="qb-out">Departure</label><input id="qb-out" type="date" name="checkOut" required></div>
+          <div class="qb-field"><label for="qb-ad">Adults</label>
+            <select id="qb-ad" name="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+          <div class="qb-field"><label for="qb-ch">Children</label>
+            <select id="qb-ch" name="children"><option selected>0</option><option>1</option><option>2</option><option>3</option></select></div>
+          <button class="btn btn--gold" type="submit">Check availability</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         2 · INTRODUCTION — the hotel's philosophy
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section" id="discover">
+      <div class="container intro">
+
+        <div class="intro__head">
+          <p class="eyebrow" data-reveal>The House</p>
+          <h2 data-split>More Than a Stay.<br>A Place to Belong.</h2>
+        </div>
+
+        <div class="intro__body" data-reveal style="--d:.15s">
+          <p>
+            DE DON was conceived as a residence first and a hotel second: a house where the pace
+            slows the moment you arrive, where your preferences are remembered rather than requested,
+            and where every detail is considered so that you never have to think about it.
+          </p>
+          <p>
+            Set on a quiet, tree-lined street in Maitama, we are minutes from the capital's diplomatic
+            and business districts — yet a world away from them. Whether you are in Abuja for a summit,
+            a celebration or simply to rest, our role is the same: to give you the quiet confidence of
+            being looked after, beautifully.
+          </p>
+          <a class="link-line mt-s" href="/about">Our philosophy</a>
+        </div>
+
+        <div class="intro__media">
+          <figure class="frame frame--lg frame--parallax" data-reveal="mask" style="margin:0">
+            <img data-parallax="0.1" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=78"
+                 alt="The lobby lounge with deep sofas and warm wood" loading="lazy">
+          </figure>
+          <figure class="frame frame--sm" data-reveal="mask" style="--d:.25s;margin:0">
+            <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=900&q=78"
+                 alt="Bedside detail in a guest room" loading="lazy">
+          </figure>
+          <p class="intro__sig" data-reveal>The art of hospitality, practised with care.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         3 · AT A GLANCE — four short facts (edit freely)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section--tight section--sand">
+      <div class="container">
+        <dl class="glance">
+          <div data-reveal><dt>Rooms &amp; suites</dt><dd>98</dd></div>
+          <div data-reveal style="--d:.1s"><dt>Restaurants &amp; bars</dt><dd>3</dd></div>
+          <div data-reveal style="--d:.2s"><dt>Event guests, up to</dt><dd>600</dd></div>
+          <div data-reveal style="--d:.3s"><dt>From the airport</dt><dd>40 min</dd></div>
+        </dl>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         4 · ROOMS & SUITES
+         The heading is written here; the room cards are added
+         automatically from Admin → Rooms (name, photo, price).
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section--paper">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Accommodation</p>
+          <h2 data-split>Rooms &amp; Suites</h2>
+        </div>
+        <div data-reveal style="--d:.15s">
+          <p>Considered spaces for rest and work, each with its own rhythm of light, texture and calm.</p>
+          <a class="link-line mt-s" href="/accommodation">View all accommodation</a>
+        </div>
+      </div>
+
+      <div class="rail-wrap">
+        <div class="rail" id="home-rooms" aria-label="Room categories" tabindex="0"></div>
+        <div class="container rail__controls">
+          <button class="rail__btn" data-rail-prev aria-label="Previous rooms"><svg viewBox="0 0 22 8"><path d="M22 4H1M4.5.5 1 4l3.5 3.5" fill="none" stroke="currentColor"/></svg></button>
+          <div class="rail__progress"><span></span></div>
+          <button class="rail__btn" data-rail-next aria-label="Next rooms"><svg viewBox="0 0 22 8"><path d="M0 4h21M17.5.5 21 4l-3.5 3.5" fill="none" stroke="currentColor"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         5 · DINING
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="dining">
+          <figure class="frame frame--parallax" data-reveal="mask" style="margin:0">
+            <img data-parallax="0.1" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=78"
+                 alt="A plated dish at Ìtàn restaurant" loading="lazy">
+          </figure>
+
+          <div class="dining__body">
+            <p class="eyebrow" data-reveal>Dining</p>
+            <h2 data-split>A Table Worth<br>Lingering At</h2>
+            <p class="lead mt-s" data-reveal>
+              West African flavours, international technique and rooms designed for long
+              conversations — from an early breakfast before the day's meetings to a late, unhurried dinner.
+            </p>
+
+            <!-- Restaurant list: one <li> per venue -->
+            <ul class="venue-list" data-reveal>
+              <li><strong>Ìtàn</strong><span>Restaurant</span></li>
+              <li><strong>The Gold Room</strong><span>Lounge &amp; Bar</span></li>
+              <li><strong>Terrace</strong><span>Poolside</span></li>
+            </ul>
+
+            <div class="btn-row" data-reveal>
+              <a class="btn btn--gold" href="/dining#reserve-table">Reserve a table</a>
+              <a class="link-line" href="/dining">Discover dining</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signature dishes: three photos with captions -->
+        <div class="dishes">
+          <figure class="dish" data-reveal style="margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=78" alt="Suya-spiced beef with charred peppers" loading="lazy"></div>
+            <h4>Suya-Spiced Beef Fillet</h4>
+            <p>Charred peppers, yaji butter, smoked plantain purée.</p>
+          </figure>
+          <figure class="dish" data-reveal style="--d:.12s;margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=78" alt="Grilled steak with sides" loading="lazy"></div>
+            <h4>Jollof Risotto &amp; Prawns</h4>
+            <p>Smoky tomato rice, grilled tiger prawns, scotch-bonnet oil.</p>
+          </figure>
+          <figure class="dish" data-reveal style="--d:.24s;margin:0">
+            <div class="frame hover-zoom"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=78" alt="A light seasonal plate" loading="lazy"></div>
+            <h4>Garden Plate</h4>
+            <p>Seasonal vegetables from the Jos Plateau, herb oil, toasted seeds.</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         6 · EXPERIENCES
+         Each <li> in the list matches the <img> in the same position
+         in .xp__media (1st item ↔ 1st photo, and so on).
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Experiences</p>
+            <h2 data-split>Time, Well Spent</h2>
+          </div>
+          <div data-reveal><a class="link-line" href="/experiences">All experiences &amp; amenities</a></div>
+        </div>
+
+        <div class="xp">
+          <ol class="xp__list">
+            <li class="xp__item" data-reveal><a href="/experiences#pool"><span class="n">01</span><h3>Swimming Pool</h3><span class="cat">Leisure</span>
+              <p>A 25-metre heated pool framed by palms, with cabanas and terrace service from 7 am to 9 pm.</p></a></li>
+            <li class="xp__item" data-reveal><a href="/experiences#spa"><span class="n">02</span><h3>Spa &amp; Wellness</h3><span class="cat">Wellness</span>
+              <p>Six treatment rooms, a steam room and rituals inspired by West African botanicals.</p></a></li>
+            <li class="xp__item" data-reveal><a href="/experiences#fitness"><span class="n">03</span><h3>Fitness Centre</h3><span class="cat">Wellness</span>
+              <p>Open 24 hours, with Technogym equipment and personal trainers on request.</p></a></li>
+            <li class="xp__item" data-reveal><a href="/experiences#concierge"><span class="n">04</span><h3>Concierge</h3><span class="cat">Service</span>
+              <p>Restaurant bookings, city tours and every arrangement in between.</p></a></li>
+            <li class="xp__item" data-reveal><a href="/experiences#transfers"><span class="n">05</span><h3>Airport Transfers</h3><span class="cat">Service</span>
+              <p>Chauffeured Mercedes-Benz transfers to and from Nnamdi Azikiwe International Airport.</p></a></li>
+            <li class="xp__item" data-reveal><a href="/experiences#business"><span class="n">06</span><h3>Business Centre</h3><span class="cat">Business</span>
+              <p>Private workstations, printing and secretarial support, open daily.</p></a></li>
+          </ol>
+          <div class="xp__media" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1559508551-44bff1de756b?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=78" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         7 · MEETINGS & EVENTS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="events-band" aria-labelledby="events-title">
+      <div class="events-band__media">
+        <img data-parallax="0.12" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2200&q=78"
+             alt="The Grand Ballroom set for a wedding reception" loading="lazy">
+      </div>
+      <div class="container">
+        <div class="events-band__panel">
+          <p class="eyebrow" data-reveal style="color:var(--gold-soft)">Meetings &amp; Events</p>
+          <h2 id="events-title" data-split>Occasions,<br>Quietly Perfected</h2>
+          <p data-reveal>
+            From board meetings that demand discretion to weddings that deserve ceremony, our events
+            team plans every element with precision — so you can be present for the moment itself.
+          </p>
+          <ul class="occasions" data-reveal>
+            <li>Conferences</li>
+            <li>Business meetings</li>
+            <li>Private celebrations</li>
+            <li>Wedding receptions</li>
+            <li>Corporate functions</li>
+            <li>Banquets</li>
+          </ul>
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--gold" href="/meetings-events#enquire">Plan an event</a>
+            <a class="link-line" href="/meetings-events">Venues &amp; capacities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         8 · GUEST REVIEWS
+         Add or remove <div class="quote__slide"> blocks. They rotate
+         automatically. (DEMO reviews — replace with genuine ones.)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow eyebrow--plain" style="display:flex;justify-content:center" data-reveal>Guest Voices</p>
+        <div class="quote" data-reveal>
+          <span class="quote__mark" aria-hidden="true">“</span>
+
+          <div class="quote__slide">
+            <blockquote>Every detail had been anticipated before I thought to ask. The calmest stay I have had in Abuja.</blockquote>
+            <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <cite>Business traveller, Lagos — Sample review</cite>
+          </div>
+
+          <div class="quote__slide">
+            <blockquote>Our wedding reception in the Grand Ballroom was flawless. The team made it feel effortless for our families.</blockquote>
+            <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <cite>Wedding couple, Abuja — Sample review</cite>
+          </div>
+
+          <div class="quote__slide">
+            <blockquote>Discreet, efficient and genuinely warm. Our delegation will return.</blockquote>
+            <div class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <cite>Head of delegation, Geneva — Sample review</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         9 · LOCATION — address, landmarks and map
+         To move the map: change  q=...  in the iframe address below.
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section--sand">
+      <div class="container location">
+        <div class="location__body">
+          <p class="eyebrow" data-reveal>Location</p>
+          <h2 data-split>In the Heart<br>of the Capital</h2>
+          <p class="mt-s muted" data-reveal>
+            Abuja is a city of wide avenues and landmark architecture, framed by Aso Rock.
+            DE DON sits in leafy Maitama, close to the embassies, ministries and the Central Business District.
+          </p>
+
+          <address class="address" data-reveal>
+            Plot 1180, Aguiyi Ironsi Street<br>
+            Maitama, Abuja 904101<br>
+            Nigeria
+          </address>
+
+          <p class="label" data-reveal>Nearby</p>
+          <ul class="nearby" data-reveal>
+            <li><span>Central Business District</span><span>10 min drive</span></li>
+            <li><span>Aso Rock &amp; Three Arms Zone</span><span>15 min drive</span></li>
+            <li><span>Abuja National Mosque</span><span>12 min drive</span></li>
+            <li><span>Millennium Park</span><span>5 min drive</span></li>
+            <li><span>Jabi Lake</span><span>20 min drive</span></li>
+            <li><span>Nnamdi Azikiwe International Airport</span><span>40 min drive</span></li>
+          </ul>
+
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&destination=Maitama%2C%20Abuja%2C%20Nigeria" target="_blank" rel="noopener">Get directions</a>
+            <a class="link-line" href="/contact">Contact &amp; arrival</a>
+          </div>
+        </div>
+
+        <div class="location__map" data-reveal="mask">
+          <iframe title="Map showing DE DON in Maitama, Abuja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://maps.google.com/maps?q=Maitama%2C%20Abuja%2C%20Nigeria&z=14&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         10 · CLOSING INVITATION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section--tight">
+      <div class="container statement" data-reveal>
+        <p>Your stay in Abuja, <em>arranged with care.</em></p>
+        <div class="btn-row mt-m" style="justify-content:center">
+          <a class="btn" href="/reservations">Reserve your stay</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

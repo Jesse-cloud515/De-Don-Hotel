@@ -1,0 +1,382 @@
+{
+  "_note": "Settings and hotel details used by the reservation system, emails and the dashboard. PAGE TEXT is written directly in the HTML files in public/ — see docs/EDITING-GUIDE.md. All values below are DEMO data.",
+  "settings": {
+    "placeholderMode": false,
+    "currency": "NGN",
+    "currencySymbol": "₦",
+    "bookingMode": "enquiry",
+    "maxNights": 30
+  },
+  "hotel": {
+    "name": "DE DON",
+    "legalName": "De Don Hospitality Limited",
+    "tagline": "An Exceptional Stay. An Extraordinary Experience.",
+    "statement": "A private world of comfort, calm and considered service in Nigeria's capital.",
+    "addressLine": "Plot 1180, Aguiyi Ironsi Street",
+    "district": "Maitama",
+    "city": "Abuja",
+    "region": "Federal Capital Territory",
+    "country": "Nigeria",
+    "postcode": "904101",
+    "phone": "+234 809 000 0000",
+    "whatsapp": "+234 809 000 0001",
+    "email": "reservations@dedonhotel.com",
+    "eventsEmail": "events@dedonhotel.com",
+    "checkIn": "2:00 pm",
+    "checkOut": "12:00 noon",
+    "mapQuery": "Maitama, Abuja, Nigeria",
+    "latitude": "9.0579",
+    "longitude": "7.4951",
+    "airportNote": "About 40 minutes by car from Nnamdi Azikiwe International Airport, depending on traffic. Chauffeured transfers can be arranged.",
+    "directionsNote": "Complimentary secure parking for guests, with valet service at the main entrance.",
+    "socials": {
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/",
+      "x": "",
+      "linkedin": "https://linkedin.com/",
+      "tiktok": ""
+    }
+  },
+  "home": {
+    "heroEyebrow": "Abuja · Federal Capital Territory",
+    "heroTitle": "A World of Comfort.\nA Sense of Belonging.",
+    "heroText": "Discover refined hospitality and exceptional comfort in the heart of Abuja.",
+    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "heroVideo": "",
+    "introEyebrow": "The House",
+    "introTitle": "More Than a Stay.\nA Place to Belong.",
+    "introText": "DE DON was conceived as a residence first and a hotel second: a house where the pace slows the moment you arrive, where your preferences are remembered rather than requested, and where every detail is considered so that you never have to think about it.\n\nWhether you are in Abuja for a summit, a celebration or simply to rest, our role is the same — to give you the quiet confidence of being looked after, beautifully.",
+    "introImageLarge": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+    "introImageSmall": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+    "introSignature": "The art of hospitality, practised with care.",
+    "roomsEyebrow": "Accommodation",
+    "roomsTitle": "Rooms & Suites",
+    "roomsText": "Considered spaces for rest and work, each with its own rhythm of light, texture and calm.",
+    "diningEyebrow": "Dining",
+    "diningTitle": "A Table Worth\nLingering At",
+    "diningText": "Seasonal ingredients, generous hospitality and rooms designed for long conversations — from an early breakfast before the day's meetings to a late, unhurried dinner.",
+    "diningImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "experiencesEyebrow": "Experiences",
+    "experiencesTitle": "Time, Well Spent",
+    "eventsEyebrow": "Meetings & Events",
+    "eventsTitle": "Occasions,\nQuietly Perfected",
+    "eventsText": "From board meetings that demand discretion to celebrations that deserve ceremony, our events team plans every element with precision — so you can be present for the moment itself.",
+    "eventsImage": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3",
+    "testimonialsEyebrow": "Guest Voices",
+    "locationEyebrow": "Location",
+    "locationTitle": "In the Heart\nof the Capital",
+    "locationText": "Abuja is a city of wide avenues, landmark architecture and a skyline framed by Aso Rock. DE DON places you within easy reach of the capital's government, diplomatic and business districts."
+  },
+  "dining": {
+    "heroImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+    "intro": "Food is where hospitality becomes personal. Our kitchens cook with respect for the ingredient and for the guest — honest flavours, careful technique and service that reads the table.",
+    "venues": [
+      {
+        "name": "The Aso Room",
+        "kind": "Restaurant",
+        "cuisine": "Contemporary Nigerian & international",
+        "hours": "Breakfast 06:30–10:30 · Lunch 12:00–15:00 · Dinner 18:30–22:30",
+        "dressCode": "Smart casual",
+        "description": "Our signature all-day dining room: West African flavours cooked with modern technique alongside international classics, served beneath soft brass light with views over the garden terrace.",
+        "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c",
+        "placeholder": true
+      },
+      {
+        "name": "The Gold Lounge",
+        "kind": "Lounge & Bar",
+        "cuisine": "Cocktails, fine wines & small plates",
+        "hours": "Daily 16:00–01:00",
+        "dressCode": "Smart casual",
+        "description": "A low-lit lounge for an aperitif after the day's meetings, a quiet conversation or a nightcap — with a cocktail list built around Nigerian botanicals and an extensive wine cellar.",
+        "image": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f",
+        "placeholder": true
+      },
+      {
+        "name": "In-Room Dining",
+        "kind": "Private",
+        "cuisine": "Full menu from The Aso Room",
+        "hours": "24 hours",
+        "dressCode": "",
+        "description": "Selected dishes from The Aso Room and a dedicated night menu, served in the privacy of your room or suite at any hour.",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+        "placeholder": true
+      }
+    ],
+    "signatureDishes": [
+      {
+        "name": "Smoked Jollof with Guinea Fowl",
+        "description": "Party-style jollof rice, slow-smoked guinea fowl, fried plantain and pepper relish.",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "placeholder": true
+      },
+      {
+        "name": "Suya-Spiced Beef Tenderloin",
+        "description": "Grilled tenderloin in yaji spice, roasted yam purée, charred onion and tomato.",
+        "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e",
+        "placeholder": true
+      },
+      {
+        "name": "Catfish Pepper Soup",
+        "description": "A fragrant broth of fresh catfish, uziza, scent leaf and calabash nutmeg.",
+        "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327",
+        "placeholder": true
+      }
+    ],
+    "privateDining": "For birthdays, anniversaries and business dinners, our team arranges a private table or the eight-seat Chef's Room, with a menu designed around your occasion and a dedicated host for the evening."
+  },
+  "amenities": [
+    {
+      "title": "Swimming Pool",
+      "category": "Leisure",
+      "description": "A calm place to swim, read and unwind between appointments.",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "placeholder": true
+    },
+    {
+      "title": "Spa & Wellness",
+      "category": "Wellness",
+      "description": "Treatments and quiet rooms designed to restore body and mind.",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef",
+      "placeholder": true
+    },
+    {
+      "title": "Fitness Centre",
+      "category": "Wellness",
+      "description": "Modern equipment for an early workout or an evening session.",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+      "placeholder": true
+    },
+    {
+      "title": "Concierge",
+      "category": "Service",
+      "description": "Restaurant bookings, city recommendations and every arrangement in between.",
+      "image": "https://images.unsplash.com/photo-1559508551-44bff1de756b",
+      "placeholder": true
+    },
+    {
+      "title": "Airport Transfers",
+      "category": "Service",
+      "description": "Private chauffeured transfers to and from Nnamdi Azikiwe International Airport.",
+      "image": "https://images.unsplash.com/photo-1549294413-26f195200c16",
+      "placeholder": true
+    },
+    {
+      "title": "Business Centre",
+      "category": "Business",
+      "description": "Workspace, printing and meeting support for guests on business.",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c",
+      "placeholder": true
+    },
+    {
+      "title": "Private Dining",
+      "category": "Dining",
+      "description": "Tables and menus arranged around your occasion.",
+      "image": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b",
+      "placeholder": true
+    }
+  ],
+  "events": {
+    "heroImage": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+    "intro": "Every event begins with a conversation. Tell us what the day needs to achieve, and our team will shape the space, the menu and the timing around it.",
+    "venues": [
+      {
+        "name": "The Grand Ballroom",
+        "capacity": "Up to 600 banquet · 800 theatre",
+        "size": "850 m²",
+        "description": "Banquets, weddings, galas and large conferences, with a pillar-free floor and full AV.",
+        "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3",
+        "placeholder": true
+      },
+      {
+        "name": "The Zuma Conference Room",
+        "capacity": "Up to 120 theatre · 60 classroom",
+        "size": "160 m²",
+        "description": "Presentations, training sessions and corporate workshops.",
+        "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+        "placeholder": true
+      },
+      {
+        "name": "The Boardroom",
+        "capacity": "Up to 16 boardroom",
+        "size": "45 m²",
+        "description": "Discreet executive meetings and signing ceremonies.",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72",
+        "placeholder": true
+      }
+    ],
+    "occasions": [
+      "Conferences",
+      "Business meetings",
+      "Private celebrations",
+      "Wedding receptions",
+      "Corporate functions",
+      "Banquets"
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "From the airport transfer to the last breakfast, every detail was handled before I had to ask. It is the calmest place I have stayed in Abuja.",
+      "name": "Sample guest — business traveller",
+      "source": "Sample review · demo",
+      "rating": "5",
+      "placeholder": true
+    },
+    {
+      "quote": "We hosted our anniversary dinner in the Chef's Room. The team made it feel personal, unhurried and genuinely special.",
+      "name": "Sample guest — couple",
+      "source": "Sample review · demo",
+      "rating": "5",
+      "placeholder": true
+    },
+    {
+      "quote": "Our delegation of twelve was looked after with real discretion. The meeting room, the catering and the timing were faultless.",
+      "name": "Sample guest — conference organiser",
+      "source": "Sample review · demo",
+      "rating": "5",
+      "placeholder": true
+    }
+  ],
+  "nearby": [
+    {
+      "name": "Aso Rock",
+      "note": "About 10 minutes by car"
+    },
+    {
+      "name": "Abuja National Mosque",
+      "note": "About 5 minutes by car"
+    },
+    {
+      "name": "National Christian Centre",
+      "note": "About 5 minutes by car"
+    },
+    {
+      "name": "Millennium Park",
+      "note": "About 10 minutes by car"
+    },
+    {
+      "name": "Jabi Lake",
+      "note": "About 20 minutes by car"
+    },
+    {
+      "name": "Nnamdi Azikiwe International Airport",
+      "note": "About 35–45 minutes by car"
+    }
+  ],
+  "about": {
+    "heroImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+    "story": "DE DON was founded on a simple idea: that Nigeria's capital deserved a hotel that felt less like an institution and more like a private residence — a place where a visiting minister, a returning family and a first-time traveller would all feel equally at home.\n\nFrom its address in the Central Business District, the hotel brings together considered design, Nigerian warmth and the quiet precision of international hospitality. (Demo story — replace with the hotel's verified history.)",
+    "philosophy": "We believe luxury is not a display but a feeling — the feeling of being expected, understood and at ease. It lives in small things: a name remembered, a room prepared just so, a question answered before it is asked.",
+    "values": [
+      {
+        "title": "Discretion",
+        "text": "Privacy is a promise. We protect our guests' time, space and information."
+      },
+      {
+        "title": "Warmth",
+        "text": "Nigerian hospitality at its most gracious — sincere, generous and personal."
+      },
+      {
+        "title": "Precision",
+        "text": "Every detail considered, every arrangement confirmed, nothing left to chance."
+      },
+      {
+        "title": "Belonging",
+        "text": "A house that feels like yours from the first evening to the last morning."
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "alt": "Contemporary architecture at dusk",
+      "category": "Spaces"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+      "alt": "Guest room with king bed",
+      "category": "Rooms"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "alt": "Restaurant interior",
+      "category": "Dining"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1540555700478-4be289fbecef",
+      "alt": "Spa treatment room",
+      "category": "Wellness"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3",
+      "alt": "Banquet hall set for a reception",
+      "category": "Events"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+      "alt": "Suite bedroom",
+      "category": "Rooms"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "alt": "Lounge interior",
+      "category": "Spaces"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+      "alt": "Plated dish",
+      "category": "Dining"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "alt": "Swimming pool",
+      "category": "Wellness"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
+      "alt": "Suite living area",
+      "category": "Rooms"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+      "alt": "Conference room",
+      "category": "Events"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f",
+      "alt": "Bar and lounge",
+      "category": "Dining"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14",
+      "alt": "Marble bathroom",
+      "category": "Rooms"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
+      "alt": "Wellness relaxation room",
+      "category": "Wellness"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3",
+      "alt": "Wedding reception table",
+      "category": "Events"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39",
+      "alt": "Bedroom detail",
+      "category": "Rooms"
+    }
+  ],
+  "announcements": [
+    {
+      "text": "Demo website — all text, prices and photographs are sample content.",
+      "link": "",
+      "active": true
+    }
+  ],
+  "seo": {
+    "titleSuffix": "DE DON · Luxury Hotel in Abuja",
+    "description": "DE DON is a luxury hotel in Abuja, Nigeria offering refined rooms and suites, dining, wellness, meetings and events. Reserve your stay.",
+    "ogImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+  }
+}

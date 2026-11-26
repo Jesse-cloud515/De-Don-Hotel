@@ -1,0 +1,74 @@
+<!doctype html>
+<!--
+  =====================================================================
+  DE DON · GALLERY PAGE
+  =====================================================================
+  • Each photo is one <button> line inside id="gallery".
+  • data-cat="..." is its category; the filter buttons at the top are
+    created automatically from these categories.
+  • alt="..." is the caption shown in the full-screen viewer.
+  =====================================================================
+-->
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Opens this page on the website server when viewed inside VS Code (see the file for details) -->
+  <script src="assets/js/vscode-preview.js"></script>
+  <title>Gallery · DE DON · Luxury Hotel in Abuja</title>
+  <meta name="description" content="Photographs of the rooms, dining, wellness and event spaces at DE DON, Abuja.">
+  <meta property="og:title" content="Gallery · DE DON, Abuja">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=75">
+  <meta name="theme-color" content="#101B1B">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+
+<body data-page="gallery">
+  <main id="main">
+
+    <!-- ═══════════ 1 · PAGE HEADER ═══════════ -->
+    <section class="page-hero page-hero--short">
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>Gallery</p>
+        <div class="page-hero__meta">
+          <h1 data-split>Impressions<br>of <em>DE DON</em></h1>
+          <p data-reveal style="--d:.3s">Rooms, tables, quiet corners and celebrations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 2 · PHOTOS (one <button> per photo) ═══════════ -->
+    <section class="section" style="padding-top:clamp(56px,7vw,96px)">
+      <div class="container">
+        <div class="filters" id="gallery-filters" role="group" aria-label="Filter photos"></div>
+
+        <div class="masonry" id="gallery">
+          <button data-cat="Spaces"   data-reveal><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=78" alt="DE DON at dusk" loading="lazy"><span>Spaces</span></button>
+          <button data-cat="Rooms"    data-reveal><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=78" alt="Deluxe Room" loading="lazy"><span>Rooms</span></button>
+          <button data-cat="Dining"   data-reveal><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=78" alt="Ìtàn restaurant" loading="lazy"><span>Dining</span></button>
+          <button data-cat="Wellness" data-reveal><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=78" alt="Spa treatment room" loading="lazy"><span>Wellness</span></button>
+          <button data-cat="Events"   data-reveal><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=78" alt="Grand Ballroom" loading="lazy"><span>Events</span></button>
+          <button data-cat="Rooms"    data-reveal><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=78" alt="Executive Room" loading="lazy"><span>Rooms</span></button>
+          <button data-cat="Spaces"   data-reveal><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=78" alt="Lobby lounge" loading="lazy"><span>Spaces</span></button>
+          <button data-cat="Dining"   data-reveal><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=78" alt="Signature dish at Ìtàn" loading="lazy"><span>Dining</span></button>
+          <button data-cat="Wellness" data-reveal><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=78" alt="Swimming pool" loading="lazy"><span>Wellness</span></button>
+          <button data-cat="Rooms"    data-reveal><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=78" alt="Junior Suite lounge" loading="lazy"><span>Rooms</span></button>
+          <button data-cat="Events"   data-reveal><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=78" alt="Niger Hall" loading="lazy"><span>Events</span></button>
+          <button data-cat="Dining"   data-reveal><img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=900&q=78" alt="The Gold Room bar" loading="lazy"><span>Dining</span></button>
+          <button data-cat="Rooms"    data-reveal><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=78" alt="Marble bathroom" loading="lazy"><span>Rooms</span></button>
+          <button data-cat="Wellness" data-reveal><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=78" alt="Hot stone massage" loading="lazy"><span>Wellness</span></button>
+          <button data-cat="Events"   data-reveal><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=78" alt="Wedding reception table" loading="lazy"><span>Events</span></button>
+          <button data-cat="Rooms"    data-reveal><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=78" alt="Suite bedroom" loading="lazy"><span>Rooms</span></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
